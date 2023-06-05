@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+</head>
+
+<body>
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 800px;
+        }
+
+        .close {
+            color: #fff;
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: auto;
+        }
+
+        .images {
+            width: 700px;
+            height: 400px;
+            display: flex;
+        }
+.btn
+{
+    color: blue;
+}
+
+
+    </style>
+    Assignment -18(53-57)
+    <h1>EVENTS</h1>
+
+    <img class="images"
+        src="https://media.istockphoto.com/id/1098035776/photo/lights-reflection-in-the-the-water-at-night-at-karachi-port.jpg?s=612x612&w=0&k=20&c=NS9NvEu3uHofzkj6092-yOmO0FevhJksEUDnZjMWmWI="
+        alt="Image 1" onclick="openModal(this)" />
+    <img class="images"
+        src="https://media.istockphoto.com/id/157611973/photo/mausoleum-of-pakistans-founder-mohammad-ali-jinnah.jpg?s=612x612&w=0&k=20&c=2KTv7qBEs4kt6bMMEgkpwVRHTrnqQvc6s54GBPNH5p8="
+        alt="Image 2" onclick="openModal(this)" />
+    <img class="images"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png"
+        alt="Image 3" onclick="openModal(this)" />
+    <img class="images"
+        src="https://as1.ftcdn.net/v2/jpg/01/81/83/64/1000_F_181836467_Rlta1KGqRiPa40zIIPHKjlzEM18Gy3DG.jpg"
+        alt="Image 4" onclick="openModal(this)" />
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg" />
+    </div>
+
+    <div>
+        <p id="zoomedText">Paragraphs are distinct blocks of text which section out a larger piece of writing—stories,
+            novels, articles, creative writing or professional writing pieces—making it easier to read and understand.
+            Good paragraphs are a handy writing skill for many forms of literature, and good writers can greatly enhance
+            the readability of their news, essays, or fiction writing when constructed properly.</p>
+        <button class = "btn" onclick="zoomIn()">Zoom In (+)</button>
+        <button class ="btn" onclick="zoomOut()">Zoom Out (-)</button>
+    </div>
+
+    <script src="./app.js">
+    </script>
+</body>
+
+</html>
